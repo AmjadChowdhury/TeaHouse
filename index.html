@@ -16,6 +16,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/5fb88f6c15.js" crossorigin="anonymous"></script>
+
+    <!-- colour -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
     <!-- style -->
     <style>
         .manrope{
@@ -24,11 +40,69 @@
     </style>
 </head>
 <body class="manrope">
-    <header>
-
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <div>
+                <h1 class="text-7xl font-extrabold">It's good <br>
+                    tea time at The <br> Tea House</h1>
+                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary">Explore More</button>
+              </div>
+              <div>
+                <img src="./images/banner.png" class="max-w-sm" />
+                <!-- ratings -->
+                <div class="-mt-16 flex items-center gap-4 drop-shadow-lg shadow-slate-500 bg-white p-6 w-60 rounded-tl-3xl rounded-br-3xl">
+                    <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+                    <div>
+                        <h3 class="text-3xl">5.00</h3>
+                        <p>Trust Pilot Ratings</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </header>
-    <main>
+    <main class="container mx-auto">
+        <section class="text-center my-24">
+            <h2 class="text-5xl font-extrabold mb-5">Our <span class="text-green-500">Featured</span> Products</h2>
+            <p class="lg:max-w-3xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
 
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20">
+                <!-- first card -->
+                <div class="card p-6 bg-[#FBF9F1] shadow-xl">
+                    <figure><img src="./images/tea-1.png"/></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-3xl font-semibold">Milk <span class="font-extrabold text-black">Tea</span></h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- Second  card -->
+                <div class="card p-6 bg-[#FBF9F1]  shadow-xl">
+                    <figure><img src="./images/tea-2.png"/></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-3xl font-semibold">Black <span class="font-extrabold text-black">Tea</span></h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                 <!-- Third  card -->
+                 <div class="card p-6 bg-[#FBF9F1] shadow-xl">
+                    <figure><img src="./images/tea-3.png"/></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-3xl font-semibold">Lemon <span class="font-extrabold text-orange-600">Tea</span></h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                 <!-- fourth  card -->
+                 <div class="card p-6 bg-[#FBF9F1] shadow-xl">
+                    <figure><img src="./images/tea-4.png"/></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-3xl font-semibold">Green <span class="font-extrabold text-green-600">Tea</span></h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
